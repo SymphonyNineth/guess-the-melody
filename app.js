@@ -75,6 +75,7 @@ let questions = [
         currentIndex = 0;
        function nextPiece(){
            player.src = shuffledQuestions[currentIndex].fileMP3;
+                player.play();
             shuffledQuestions[currentIndex].options.forEach((option) => {
                 const button = document.createElement("button");
                 button.innerText = option.name;
